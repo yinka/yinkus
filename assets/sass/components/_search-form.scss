@@ -1,0 +1,36 @@
+.search-form__fieldset {
+  display: inline;
+  border: 0;
+  padding: 0;
+  position: relative;
+  line-height: 0;
+}
+
+.search-form__input {
+  background-color: darken($background-color, 5%);
+  border: 1px solid $border-color;
+  border-radius: 1em;
+  color: $text-color;
+  font-size: 0.9rem;
+  padding: 0.35em 0.75em 0.35em 2em;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: lighten($background-color-dark, 5%);
+    border: 1px solid $border-color-dark;
+    color: $text-color-dark;
+  }
+}
+
+.search-form__icon {
+  left: 0.6rem;
+  position: absolute;
+  top: 0.5rem;
+  height: 0.8rem;
+  width: 0.8rem;
+
+  fill: $text-color;
+
+  @media (prefers-color-scheme: dark) {
+    fill: $text-color-dark;
+  }
+}

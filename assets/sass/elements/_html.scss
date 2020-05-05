@@ -1,0 +1,24 @@
+html {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $body-font-family;
+  font-size: calc(1vmin + 13px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.4;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+}
+
+_:default:not(:root:root),
+html {
+  animation: webkitfix 1s forwards infinite;
+}
+@-webkit-keyframes webkitfix {
+  100% {
+    z-index: auto;
+  }
+}

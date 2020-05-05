@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require "date"
+require "fileutils"
+require "front_matter_parser"
+
+unsafe_yaml_loader = ->(string) { YAML.load(string) }
+
+Dir.glob("content/photos/**/*.md").each do |file|
+  parsed_file = FrontMatterParser::Parser.
+    parse_file(file, loader: unsafe_yaml_loader)
+
+  image = parsed_file["image"].split("/").last
+
+  new_content = <<~CONTENT
+    #{parsed_file.front_matter.merge("image" => image).to_yaml}---
+
+    #{parsed_file.content}
+  CONTENT
+
+  File.open(file, "w") do |new_file|
+    new_file.write(new_content)
+  end
+end

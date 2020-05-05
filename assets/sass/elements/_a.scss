@@ -1,0 +1,19 @@
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: $link-color-dark;
+
+    &:hover,
+    &:focus {
+      color: $link-color-hover-dark;
+    }
+  }
+}

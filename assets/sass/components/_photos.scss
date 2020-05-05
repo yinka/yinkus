@@ -1,0 +1,20 @@
+.photos {
+  padding-bottom: 4vmin;
+  padding-top: 1em;
+}
+
+.photos__container {
+  @include container;
+  display: grid;
+  grid-gap: 2vmin 2vmin;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photos__thumb-container {
+  line-height: 0;
+}
+
+.photos__thumb {
+  border-radius: 0.25rem;
+  width: 100%;
+}

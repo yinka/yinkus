@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <section class="photos photos__container">
+    {{ range (.Paginator 24).Pages }}
+      <article class="photos__thumb-container">
+        {{ partial "photo_thumb.html" . }}
+      </article>
+    {{ end }}
+  </section>
+
+  <section class="posts__pagination">
+    {{ if .Paginator.HasNext }}
+      <a class="posts__next-link" href="{{.Paginator.Next.URL}}">← Older</a>
+    {{ end }}
+
+    {{ if .Paginator.HasPrev }}
+      <a class="posts__prev-link" href="{{.Paginator.Prev.URL}}">Newer →</a>
+    {{ end }}
+  </section>
+{{ end }}

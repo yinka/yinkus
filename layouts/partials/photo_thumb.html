@@ -1,0 +1,29 @@
+{{ $src := .Page.Resources.GetMatch (.Params.image) }}
+
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+
+{{ $tinyw := default "300x300" }}
+{{ $smallw := default "600x600" }}
+
+{{/* resize the src image to the given sizes */}}
+
+{{ .Scratch.Set "tiny" ($src.Fill $tinyw) }}
+{{ .Scratch.Set "small" ($src.Fill $smallw) }}
+
+{{/* add the processed images to the scratch */}}
+
+{{ $tiny := .Scratch.Get "tiny" }}
+{{ $small := .Scratch.Get "small" }}
+
+<a class="photos__link" href={{.URL}}>
+  <img class="photos__thumb"
+    srcset="
+    {{ if ge $src.Width "300" }}
+      {{ with $tiny.RelPermalink }}{{.}} 1x{{ end }}
+    {{ end }}
+    {{ if ge $src.Width "600" }}
+      {{ with $small.RelPermalink }}, {{.}} 1.5x{{ end }}
+    {{ end }}"
+    src="{{ $tiny.RelPermalink }}"
+  >
+</a>

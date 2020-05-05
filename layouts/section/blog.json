@@ -1,0 +1,22 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ .Site.Title }}",
+  "home_page_url": "{{ .Site.BaseURL }}",
+  "feed_url": "{{ .Permalink}}",
+
+  "items": [
+    {{ range $i, $e := first 20 .Pages }}
+    {{ if $i }}, {{ end }}
+    {
+      "id": "{{ .Permalink }}",
+      "title": "{{ .Title }}",
+      {{ if .Params.categories }}
+      "tags": ["{{ delimit .Params.categories "\", \"" }}"],
+      {{ end }}
+      "content_html": {{ .Content | jsonify }},
+      "url": "{{ .Permalink }}",
+      "date_published": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}"
+    }
+  {{ end }}
+  ]
+}

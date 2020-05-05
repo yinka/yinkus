@@ -1,0 +1,17 @@
+<article class="post outer">
+  <header>
+    <div class="container">
+      <h3 class="post__title"><a href="{{.URL}}">{{.Title}}</a></h3>
+
+      <p class="post__date">{{.Date.Format "Jan 2, 2006"}}</p>
+    </div>
+  </header>
+
+  {{ if .Truncated }}
+    {{.Summary}}
+
+    <p class="post__read-more"><a href="{{.URL}}">Read on →</a></p>
+  {{ else }}
+    {{.Content}}
+  {{ end }}
+</article>

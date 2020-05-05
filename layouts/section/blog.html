@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <section class="posts">
+    {{ range .Paginator.Pages }}
+      {{ partial "blog_post_summary.html" . }}
+    {{ end }}
+  </section>
+
+  <section class="posts__pagination">
+    {{ if .Paginator.HasNext }}
+      <a class="posts__next-link" href="{{.Paginator.Next.URL}}">← Older</a>
+    {{ end }}
+
+    {{ if .Paginator.HasPrev }}
+      <a class="posts__prev-link" href="{{.Paginator.Prev.URL}}">Newer →</a>
+    {{ end }}
+  </section>
+{{ end }}

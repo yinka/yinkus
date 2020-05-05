@@ -1,0 +1,59 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  {{ block "title" . }}
+    {{ .Site.Title }}
+  {{ end }}
+</title>
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7434852/6717812/css/fonts.css" />
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+<!-- Links -->
+{{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{ range .Sections -}}
+  {{- range .AlternativeOutputFormats }}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{- end }}
+{{ end -}}
+
+<!-- Favicon -->
+<link href="" rel="shortcut icon">
+
+<!-- Large favicon for Opera Speed Dial -->
+<link rel="icon" type="image/png" href="/favicon_32.png">
+
+<!-- iOS favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+<!-- Indieweb -->
+<link rel="micropub" href="https://danbarber.me/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="microsub" href="https://aperture.p3k.io/microsub/460">
+
+<link href="https://micro.blog/danbarber" rel="me">
+<link href="https://twitter.com/_danbarber" rel="me">
+<link href="https://github.com/danbee" rel="me">
+<link href="https://www.instagram.com/danbee/" rel="me">
+<link href="/danbarber.gpg" rel="pgpkey">
+
+{{ if .Title }}
+<meta property="og:title" content="{{ .Title }} – {{ .Site.Title }}">
+{{ else }}
+<meta property="og:title" content="{{ .Site.Title }}">
+{{ end }}
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ if .Params.image }}
+  {{ $imageSize := default "600x600" }}
+  {{ $src := .Page.Resources.GetMatch (.Params.image) }}
+  {{ $image := $src.Fit $imageSize }}
+<meta property="og:image" content="{{ $image.RelPermalink }}">
+{{ end }}
+<meta property="og:description" content="{{ .Summary }}">
+<meta property="og:locale" content="en_UK">
