@@ -6,8 +6,8 @@ title = "Yinka Adeyeye"
 summaryLength = 999999
 
 [params]
-AuthorName = "Daniel Barber"
-GitHubUser = "danbee"
+AuthorName = "Yinka Adeyeye"
+GitHubUser = "yinka"
 
 [permalinks]
 blog = "/:year/:month/:day/:title"
