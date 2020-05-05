@@ -1,0 +1,11 @@
+name = "DanBarber"
+license = "MIT"
+licenselink = ""
+description = ""
+tags = ["blog", "photos"]
+features = ["blog", "themes", "disqus"]
+min_version = 0.53
+
+[author]
+    name = "danbee"
+    homepage = "https://danbarber.me"
