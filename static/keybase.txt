@@ -1,0 +1,57 @@
+==================================================================
+https://keybase.io/yinka_adeyeye
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://yink.us
+  * I am yinka_adeyeye (https://keybase.io/yinka_adeyeye) on keybase.
+  * I have a public key ASCj6TCqmuQVhIo-VgLpj2rmd4wT9DIbVBvdwBimppDfwwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120de5acdf2af4824c7d0a8f01fb8925f1766def715a6a955ea2ad2b190e387dd560a",
+      "host": "keybase.io",
+      "kid": "0120a3e930aa9ae415848a3e5602e98f6ae6778c13f4321b541bddc018a6a690dfc30a",
+      "uid": "baf3edf6d70b3465fb1df2d2fe082a19",
+      "username": "yinka_adeyeye"
+    },
+    "merkle_root": {
+      "ctime": 1587915183,
+      "hash": "814e639e53f886162fb82cc99b60ebbb0ed53a5172feb81e12993d63e6e8cd178611c174da71a215ac0b7aec205e22c00f41e0c61115ab1220d1c34dbe66e415",
+      "hash_meta": "609c9914bf855506cad34c23000f5e60c208d9c2a690de148bd7890280477193",
+      "seqno": 16059355
+    },
+    "service": {
+      "entropy": "sNoYP3KMY0mkjNeAaD6e4CJP",
+      "hostname": "yink.us",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1587915203,
+  "expire_in": 504576000,
+  "prev": "f648ed8eacef4fcad8ceafb6436dfb32d3ce8263c37bcbe2e354a9ab072ace1e",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgo+kwqprkFYSKPlYC6Y9q5neME/QyG1Qb3cAYpqaQ38MKp3BheWxvYWTESpcCC8Qg9kjtjqzvT8rYzq+2Q237MtPOgmPDe8vi41Spqwcqzh7EIMxn7sIsyK1dgq3sHk896HfUGbWOeKtLM6JfZ9VsTHP/AgHCo3NpZ8RAdUZJBmEfLS/d5N4sj3UpQ8gdxijVTOOHK66CIFpqZ0erhuanM8XlH5rku8y/PgiN//a1ZMYeTSFHzz+mfmkDBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGF5Y6OI3aHZZ+HmBY91GnoBYHJ2Res+YF9fF6P5J/Xho3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yinka_adeyeye
+
+==================================================================
+
