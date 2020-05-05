@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+hugo server --buildDrafts --bind="0.0.0.0" -v --baseUrl="http://yinkus.localhost:1313/"
