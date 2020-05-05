@@ -1,16 +1,12 @@
 {{ if eq (getenv "CONTEXT") "production" }}
-<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
-  (function(f, a, t, h, o, m){
-    a[h]=a[h]||function(){
-      (a[h].q=a[h].q||[]).push(arguments)
-    };
-    o=f.createElement('script'),
-      m=f.getElementsByTagName('script')[0];
-    o.async=1; o.src=t; o.id='fathom-script';
-    m.parentNode.insertBefore(o,m)
-  })(document, window, 'https://stats.danbarber.me/tracker.js', 'fathom');
-  fathom('trackPageview');
+  window['ga-disable-{{ site.google_analytics }}'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.google_analytics }}');
 </script>
 <!-- / Fathom -->
 {{ end }}
