@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "Tokens of love"
+date:   2020-04-21 01:01:31 +0000
+categories: ['society']
+tags: [history, letter, society, museum, australia, england]
+#published: false
+#excerpt_separator: <!--more-->
+#excerpt: ""
+#link: 
+---
+
+Thomas Alsop, 21, brick labourer, was convicted in 1833 at Staffordshire for stealing a sheep.
+
+> Accept this dear mother from your unfortunate son Thomas-Alsop, transported July 25 aged 21, 1833. 
+  When you see this think of me, forget me not, dear mother.
+  
+   <!--more-->
+   
+{: .center}
+![Thomas Alsop](/images/thomas.png){: width="400px"}
+
+
+I first saw one of these at my local museum and became fascinated. The National Museum of Australia has 314 of these `convict love tokens` in its collection. 
+
+Convicts who were transported to Australia from England (in the 1800's) could not be expected to return, they engraved messages on copper pennies, known as `leaden hearts` and smuggled them out to their families. Convicts could be sentenced to transportation for 7 years, 14 years or life - some for stealing as little as an handkerchief.
+
+## Edward
+
+> No pen can write, no tongue can tell, the aching heart, that bids farewell. 
+
+{: .center}
+![Edward Kershaw](/images/ed.png){: width="400px"}
+
+Edward Kershaw, 30, a bootmaker from Hampshire, was tried and convicted at Middlesex Session of Peace on 25 August 1834 for robbing lodgings.
+   
+
+## James
+ 
+> When in captivity, time goeth very slow but free as air to roam how quick time doth go
+ 
+{: .center}
+![James Godfrey](/images/james.png){: width="400px"}
+   
+ James Godfrey, 33, baker, was convicted at the Central Court in London for larceny on 30 January 1837. He was sentenced to seven years’ transportation.
+  
+ You can find more tokens here: 
+
+* [⤷ What are Convict Love Tokens](https://sydneylivingmuseums.com.au/convict-sydney/what-are-convict-love-tokens)
+* [⤷ Love Tokens Collections](http://love-tokens.nma.gov.au/highlights)
+
+<br /> 

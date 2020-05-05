@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Plexamp updated to version 3"
+date:   2020-04-17 01:01:31 +0000
+categories: [music]
+tags: [music, audio, plex, self-hosted, winamp]
+#published: false
+#excerpt_separator: <!--more-->
+#excerpt: ""
+---
+
+[Plex](https://plex.tv) has just announced a version 3 update to Plexamp music player. 
+
+
+Plexamp is a simple music player for Plex, modelled after the classic Winamp audio player, it supports gapless playback with soft transitions, loudnes levelling, direct plays of almost all audio formats, beautiful visualizations and keyboard media keys. It works offline when you are out and about and works as a remote for other plex players.
+
+<!--more-->
+
+The new upgrade, thanks to the new audio library built on top of a low-level commercial audio engine, brings Plexamp to IOS, Android and Linux, making it available on all major platforms. 
+
+Plexamp v3 was re-written in React Native (formerly written in Electron) with new and improved features like voice boost, silence compression, cross platform sync, pre-caching, mix builder, parametric equalizer, search, recent plays, stations, albums and artist pages, personal charts and history. It also comes with shiny new themes and beautiful blur effects.
+
+<br />
+
+{: .center}
+![Plexamp version 3](/images/plexamp.png){: width="300px"} 
+
+<br />
+
+I have a couple of high fidelity albums on Plex but I mostly use Apple Music nowadays, gems like Plexamp make me wish I still curate my own music.
+
+Go try it out:
+  * [⤷ Plexamp v3](https://medium.com/plexlabs/plexamp-v3-9af3b10063b4)
+  * [⤷ Introducing Plexamp](https://medium.com/plexlabs/introducing-plexamp-9493a658847a)

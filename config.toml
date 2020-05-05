@@ -1,3 +1,27 @@
 baseURL = "http://yink.us/"
 languageCode = "en-gb"
 title = "Yinka Adeyeye"
+
+
+summaryLength = 999999
+
+[params]
+AuthorName = "Daniel Barber"
+GitHubUser = "danbee"
+
+[permalinks]
+blog = "/:year/:month/:day/:title"
+photos = "/:year/:month/:day/:title"
+
+[imaging]
+resampleFilter = "lanczos"
+quality = 75
+anchor = "smart"
+
+[outputFormats.jsonfeed]
+mediaType = "application/json"
+isPlainText = true
+
+[outputs]
+home = ["html", "jsonfeed", "rss"]
+section = ["html", "jsonfeed", "rss"]

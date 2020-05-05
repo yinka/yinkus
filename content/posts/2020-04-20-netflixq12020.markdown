@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Netflix Q1/2020 Earnings"
+date:   2020-04-22 01:01:31 +0000
+categories: ['external links']
+tags: [links, earnings, finance, netflix, movies, series, "disney+"]
+#published: false
+#excerpt_separator: <!--more-->
+#excerpt: ""
+link: https://www.cnbc.com/2020/04/21/netflix-nflx-earnings-q1-2020.html
+---
+
+
+
+> In the first quarter, Netflix benefited from hit new shows like "Tiger King" and "Love Is Blind" and new seasons of dramas "Ozark" and "Money Heist." Consumers stuck inside at home during the Covid-19 pandemic have turned to Netflix for entertainment.
+
+
+
+> "Our small contribution in these difficult times is to make home confinement a little more bearable," Chief Executive Reed Hastings said on a conference call with analysts.
+
+Twice as many new subscribers as Wall Street expected (15.77 million new subscribers), Netflix sure blows the competition away and Tiger King was quite something.
+
+[Disney+](https://disneyplusoriginals.disney.com/) is not far behind though with an impressive 50 Million subscribers in  just over 6 months.

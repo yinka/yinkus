@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Telegram reaches 400M MAU"
+date:   2020-04-24 01:01:31 +0000
+categories: ['external links']
+tags: [links, telegram, apps, whatsapp, crypto, blockchain]
+#published: false
+#excerpt_separator: <!--more-->
+#excerpt: ""
+link: https://telegram.org/blog/400-million
+---
+
+
+[Telegram](https://telegram.org), the popular social messaging app now has 400 million monthly active users.
+
+> When we started Telegram 7 years ago, we assumed that people will always choose freedom and quality over restrictions and mediocrity. As the gap in popularity between Telegram and its older competitors narrows, we find more and more validity in that original assumption. Thank you for being smart and free!
+
+Telegram started life as a WhatsApp clone but has amassed so many features over the last seven year that it is now, arguably, the best messaging service out there, though its 400 million active users is a far cry from WhatsApp's whopping 2 billion active users. 
+
+In addition to chats and voice calls, Telegram offers tons of other features and customisations; secret chats, bots, cloud storage, username, super groups, channels, multiple platforms, multiple sessions, end-to-end encryption, stickers, folders, tolls and quizzes. The company is also developing the [Gram cryptocurrency](https://ico-telegram.org/#what-is-gram) and [TON blockchain](https://ton.org/ton.pdf).

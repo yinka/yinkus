@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Delete unwanted boot entries from Windows BIOS"
+date:   2020-05-02 01:01:31 +0000
+categories: technology
+tags: [tech, windows, boot, bcdedit, bios, computer] 
+#excerpt_separator: <!--more-->
+---
+
+I had a machine that had accumulated multiple redundant entries in the BIOS boot sequence as a result of running dual boots, clover/hackintoshes and multiple SSD swaps over time.
+
+This machine now runs Windows 10 exclusively but still had all old boot entries; rEFInd, MacOS, Clover, CentOS and Ubuntu. While keeping these entries will not cause any harm, I prefer to keep the Windows Boot Manager tidy by getting rid of all entries other than Windows 10.
+
+<!--more-->
+
+You could always use a [Visual BCD](https://www.thewindowsclub.com/advanced-visual-bcd-editor-for-windows-7-and-vista) editor to remove the crufts but I think it's simpler to use the __BCDEdit__ tool built into [Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/bcdedit-command-line-options).
+
+👉🏽 Start *Windows Terminal* or *Command Prompt* and run this command as administrator:
+
+{% highlight posh %}
+PS C:\Users\yinka> bcdedit /enum firmware
+{% endhighlight %}
+
+The above command will list all current boot entries in windows boot manager along with their identifiers, as well as all local devices and identifiers. 2 examples of entries I want to delete on my machine are listed below, identified by the 'description' :
+
+
+```
+Firmware Application (101fffff) 
+------------------------------- 
+identifier       {0f818685-8a59-11ea-a977-806e6f6e6963}
+description      Mac OS X  
+
+Firmware Application (101fffff) 
+------------------------------- 
+identifier       {0f818686-8a59-11ea-a977-806e6f6e6963} 
+description      CentOS Stream
+```
+
+👉🏽 Now that you know have a list of identifiers to remove, run the `bcdedit /delete` command against those identifiers, you'll need to be extremely careful here as deleting the wrong entry will certainly bork your machine.
+
+{% highlight posh %}
+PS C:\Users\yinka> bcdedit /delete "{0f818685-8a59-11ea-a977-806e6f6e6963}"
+{% endhighlight %}
+
+And that's it, when you re-run `bcdedit /enum firmware` or boot into bios, all unwanted entries should be gone.
+
+To find more information about what you can do with __BCDEdit__, run `bcdedit /?`.
