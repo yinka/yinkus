@@ -1,16 +1,19 @@
 {{ define "main" }}
+<!--
   <section class="home__about">
     <article class="container">
       {{ .Content }}
     </article>
   </section>
-
+-->
   <section class="home__photos">
+    
     <article class="container">
+      <!--
       <header class="home__header">
         <h2>Latest Photos</h2>
       </header>
-
+    -->
       <div class="photos__container">
         {{ range first 3 (where .Site.RegularPages "Section" "photos") }}
           <article class="photos__thumb-container">
