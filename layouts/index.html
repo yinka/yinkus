@@ -23,7 +23,7 @@
       </div>
 
       <footer class="home__more">
-        <p><a href="/photos">All Photos →</a></p>
+        <p><a href="/photos">More Photos →</a></p>
       </footer>
     </article>
   </section>
@@ -31,7 +31,7 @@
   <section class="home__blog">
     <article class="container">
       <header class="home__header">
-        <h2>From the Blog</h2>
+        <h2>Blog Posts</h2>
       </header>
 
       {{ range first 5 (where .Site.RegularPages "Section" "blog") }}

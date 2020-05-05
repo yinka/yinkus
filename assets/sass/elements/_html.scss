@@ -2,6 +2,9 @@ html {
   background-color: $background-color;
   color: $text-color;
   font-family: $body-font-family;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: calc(1vmin + 13px);
   font-style: normal;
   font-weight: 300;
